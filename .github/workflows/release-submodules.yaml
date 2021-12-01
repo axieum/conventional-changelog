@@ -44,7 +44,7 @@ jobs:
       matrix:
         package: ${{fromJson(needs.changeFinder.outputs.nodePaths)}}
     steps:
-      - uses: google-github-actions/release-please-action@11eb2583adb69444ed39ef89801e4eabb4a286bb
+      - uses: google-github-actions/release-please-action@00911586051618367fa9c19b161a0a146ac51970
         id: release-please
         with:
            path: packages/${{ matrix.package }}
